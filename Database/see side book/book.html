@@ -1,0 +1,122 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sea Side Booking</title>
+	<link rel="icon" type="image/png" href="logo2.png"> 
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/bookstyle.css" />
+</head>
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Reservation</h1>
+						</div>
+						<form method="POST" action="book.php">
+							<div class="form-group">
+								<span class="form-label">Name</span>
+								<input class="form-control" type="text" name="name" placeholder="Enter Name..." required>
+							</div>
+							<div class="form-group">
+								<span class="form-label">Address</span>
+								<input class="form-control" type="text" name="address" placeholder="Country, City..." required>
+							</div>
+							<div class="form-group">
+								<span class="form-label">E-Mail</span>
+								<input class="form-control" type="Email" name="email" placeholder="Enter E-mail..." required>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Check In</span>
+										<input class="form-control" name="check_in" type="date" required>
+									</div>
+									<span class="in-out hidden-xs hidden-sm"></span>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Check out</span>
+										<input class="form-control" name="check_out" type="date" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">Package</span>
+										<select class="form-control" name="package" required>
+											<option value="" selected hidden>Select Package...</option>
+											<option value="Suite">Suite</option>
+											<option value="Deluxe">Deluxe</option>
+											<option value="Premium">Premium</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">Room Type</span>
+										<select class="form-control" name="room_type" required>
+											<option value="" selected hidden>Select Room Type...</option>
+											<option value="Bronze">Bronze</option>
+											<option value="Silver">Silver</option>
+											<option value="Gold">Gold</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">No of rooms</span>
+										<select class="form-control" name="number_of_rooms">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">Adults</span>
+										<select class="form-control" name="adults">
+											<option value="1">1</option>
+											<option value="2">2</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">Children</span>
+										<select class="form-control" name="children">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+							            </select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-4">s
+									<div class="form-btn">
+										<button class="submit-btn" type="submit">Check Now</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
